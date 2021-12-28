@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba Unitaria de AddCategory Prueba del componente 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <img
+    src="https://pokeapi.co/api/v2/pokemon/132"
+  />
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</form>
+`;

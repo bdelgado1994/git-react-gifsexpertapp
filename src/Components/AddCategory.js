@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 
 export default function AddCategory({ setCategories, categories }) {
     const [inputValue, setInputValue] = useState('');
-    const hadleChage = (e) => {
+    const handleChage = (e) => {
         setInputValue(e.target.value);
+        console.log('Handle Change Cambiado');
     }
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,8 +21,11 @@ export default function AddCategory({ setCategories, categories }) {
             <input
                 type={'text'}
                 value={inputValue}
-                onChange={hadleChage}
+                onChange={handleChage}
             />
         </form>
     );
 }
+AddCategory.propTypes = {
+    setCategories: PropTypes.func.isRequired
+};

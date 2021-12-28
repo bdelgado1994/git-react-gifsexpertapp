@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getGifs } from "../helpers/GetGifs";
+import PropTypes from 'prop-types';
 export const useFetchGifs = (category) => {
     const [state, setstate] = useState({
         data: [],
